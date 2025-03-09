@@ -9,7 +9,7 @@ class CrouselSlider extends StatelessWidget {
     // Define the items for the carousel
     List<Widget> items = [
       Container(
-        color: Colors.red,
+       decoration: BoxDecoration(borderRadius: BorderRadius.circular(20), color: Colors.black),
         child: Center(child: Text('Item 1', style: TextStyle(color: Colors.white, fontSize: 24))),
       ),
       Container(
@@ -34,6 +34,7 @@ class CrouselSlider extends StatelessWidget {
             items: items,
             options: CarouselOptions(
               height: 400,
+              
               aspectRatio: 16/9,
               viewportFraction: 0.8,
               initialPage: 0,
