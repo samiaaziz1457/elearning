@@ -2,7 +2,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 
 import 'package:elearning/constant/appcolor.dart';
-import 'package:elearning/tabbar.dart';
+
 import 'package:flutter/material.dart';
 
 class Homescreen extends StatelessWidget {
