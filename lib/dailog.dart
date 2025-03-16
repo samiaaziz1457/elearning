@@ -1,23 +1,5 @@
 
 
-// class Dailogscreen extends StatelessWidget {
-//   const Dailogscreen({super.key});
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return Dialog(
-//       child: Container(
-//          width: double.infinity,
-//          height: double.infinity,
-//          color: Colors.green,
-//          child: Column(children: [
-
-//          ],),
-//       ),
-//     );
-//   }
-// }
-
 import 'package:flutter/material.dart';
 
 class Showdailog extends StatelessWidget {

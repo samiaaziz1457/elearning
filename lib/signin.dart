@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors, unused_local_variable
 
+import 'package:elearning/bottom_navigation.dart';
 import 'package:elearning/constant/appcolor.dart';
 import 'package:elearning/forgotPassword.dart';
 import 'package:elearning/login.dart';
@@ -137,7 +138,7 @@ class Signinscreen extends StatelessWidget {
              style: TextStyle(fontSize: 20,color: Appcolor.fontcolor),
              ),
                 TextButton(onPressed: (){
-                   Navigator.of(context).push(MaterialPageRoute(builder: (context)=>LoginScreen	()));
+                   Navigator.of(context).push(MaterialPageRoute(builder: (context)=>BottomNavigation	()));
                 },child: Text("SIGN UP",style: TextStyle(fontSize: 19,color: Appcolor.maincolor),),),
                   ],
                 )

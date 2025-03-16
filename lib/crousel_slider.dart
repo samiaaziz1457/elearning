@@ -1,4 +1,5 @@
 import 'package:carousel_slider/carousel_slider.dart';
+
 import 'package:flutter/material.dart';
 
 class CrouselSlider extends StatelessWidget {
@@ -9,17 +10,17 @@ class CrouselSlider extends StatelessWidget {
     // Define the items for the carousel
     List<Widget> items = [
       Container(
-       decoration: BoxDecoration(borderRadius: BorderRadius.circular(20), color: Colors.black),
+       decoration: BoxDecoration(borderRadius: BorderRadius.circular(30), color: const Color.fromARGB(255, 16, 98, 133)),
         child: Center(child: Text('Item 1', style: TextStyle(color: Colors.white, fontSize: 24))),
       ),
       Container(
-        color: Colors.green,
+         decoration: BoxDecoration(borderRadius: BorderRadius.circular(30),  color: const Color.fromARGB(255, 66, 130, 170),),
+       
         child: Center(child: Text('Item 2', style: TextStyle(color: Colors.white, fontSize: 24))),
       ),
-      Container(
-        color: Colors.blue,
-        child: Center(child: Text('Item 3', style: TextStyle(color: Colors.white, fontSize: 24))),
-      ),
+      
+      
+      
     ];
 
     // Define the callback function for page change
@@ -33,7 +34,7 @@ class CrouselSlider extends StatelessWidget {
           CarouselSlider(
             items: items,
             options: CarouselOptions(
-              height: 400,
+              height: 200,
               
               aspectRatio: 16/9,
               viewportFraction: 0.8,

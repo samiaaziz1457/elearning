@@ -1,10 +1,11 @@
 
 
-import 'package:elearning/crousel_slider.dart';
+
+import 'package:elearning/bottom_navigation.dart';
 import 'package:elearning/home.dart';
+import 'package:elearning/splashscreen.dart';
 
 import 'package:flutter/material.dart';
-
 void main()
 {
   runApp(MyApp());
@@ -15,8 +16,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: CrouselSlider(),
-      
+      home: BottomNavigation(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
