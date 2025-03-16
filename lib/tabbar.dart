@@ -1,3 +1,4 @@
+import 'package:elearning/constant/appcolor.dart';
 import 'package:elearning/showmodelbuttomsheet.dart';
 import 'package:flutter/material.dart';
 
@@ -28,7 +29,14 @@ class _TabbarState extends State<Tabbar> with SingleTickerProviderStateMixin{
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Tab Bar View"),
+        title:  Row(
+              children: [
+                Text("Polupar Courses",style: TextStyle(color:Colors.black,fontSize: 20, fontWeight:FontWeight.w500 ),),
+            Spacer(),
+            TextButton(onPressed: (){}, child: Text("see all",style: TextStyle(color: Appcolor.maincolor,fontSize: 20),)),
+                 Icon(Icons.skip_next,color: Appcolor.maincolor,),
+              ],
+            ),
       ),
       body: Column(
         children: [
@@ -38,7 +46,7 @@ class _TabbarState extends State<Tabbar> with SingleTickerProviderStateMixin{
             Tab(child: Container(
               height: 50,
               width: 100,
-              color: Colors.amber,
+              color: const Color.fromARGB(255, 180, 139, 14),
               child: Text('chat'),
             ),),
              Tab(text: "Call",),
